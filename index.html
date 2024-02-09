@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv= "X-UA-compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2? family=Roboto:ital,wght@1,300&display=swap" rel="folha de estilo">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="container">
+<header>   
+    <img src="./lista de tarefas II.png" alt="tarefas"/> 
+        <h1>Lista de Tarefas</h1>        
+</header>   
+        <h2> Digite as tarefas no campo abaixo:</h2>    
+    <p>
+        Quando finalizar a tarefa, clique na mesma para "risca-la" de sua lista, sinalizando que foi concluida
+    </p>
+    <form id="Lista-de-Tarefas">
+        <input type="text" id="Digite-Tarefa" required placeholder="Digite Tarefa"/>
+    <button type="submit" >Adicionar +</button>
+    <button type="reset" id="Botao-Limpar">Limpar</button>
+    </form>  
+        <ul id="Tarefas"></ul>
+    </div>   
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="./main.js"></script>
+</body>
+</html>
