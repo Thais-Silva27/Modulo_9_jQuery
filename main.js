@@ -1,21 +1,37 @@
-$(document).ready(function () { 
-    const ListadeTarefas = $("#Lista-de-Tarefas");
-    const DigiteTarefa = $("#Digite-Tarefa");
+$(document).ready(function() {
 
-    ListadeTarefas.submit(function (event) {
-    event.preventDefault();
+    $('#form').validate({
+        rules: {
+            nome: {
+                required: true,
+            },
+            email: {
+                required: true,
+            },
+            telefone: {
+                required: true,
+            },
+            cpf: {
+                required: true,
+            },
+            Endereço: {
+                required:true,
+            },
+            cep: {
+            required: true,
+            },
+        },
+        messages:{
+            nome: 'O campo nome não pode estar vazio.',            
+        },
+    })
 
-    const Tarefa = $("#Digite-Tarefa").val();
+    $('#cep').mask('00000-000')
+    $('#telefone').mask('(00)00000-0000')
+    $('#cpf').mask('000.000.000-00')
+})
 
-    $("#Tarefas").append("<li>" + Tarefa + "</li>");
 
-    $("#Digite-Tarefa").val("");
-    });
-
-    ListadeTarefas.on("click", "li", function () {
-    $(this).toggleClass("completed");
-    });
-});
 
 
 
