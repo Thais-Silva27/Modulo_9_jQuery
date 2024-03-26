@@ -9,7 +9,7 @@ uma lista ordenada ou não.
 
    ___________________________________________________________________________________________________________________________________________________________
 
-   O que foi aprendido nesse modulo:
+  O que foi estudado neste modulo:
 
 * Os benefício de usar o JQuery ao desenvolver aplicações web;
 * Aplicação de seletores apropriados no jQuery;
